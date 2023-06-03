@@ -1,0 +1,12 @@
+-- Admin password is prefed into the database
+-- The admin can change on wish
+
+CREATE DATABASE newdb;
+USE newdb;
+
+CREATE TABLE admin(
+email VARCHAR(255) NOT NULL PRIMARY KEY,
+password VARCHAR(20) NOT NULL );
+
+INSERT INTO admin (email, password) VALUES
+('admin@quiz.com', 'password');
